@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko"> <!--한글 문서를 뜻함--> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Home Page</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/google.com.css">
+    
+</head>
+<!--홈페이지 디자인 시안 분석 시 왼쪽->오른쪽, 위->아래 순서로 분석하면 됨-->
+<body> <!--secti0on*5라고 입력하면 <section></section>이 5개 생김-->
+    
+    <!-- 첫 번째 구역 : 구글 사용자 네비게이션 -->
+    <section id="first">
+        <ul> <!--ul 태그 밑에 li 태그를 만들고 싶다면 
+            ul>li*5(부모태그 > 자식태그) 라고 입력하면 됨!-->
+            
+            <li>Gmail</li>
+            <li>이미지</li>
+            <li><i class="fas fa-th"></i></li>
+            <li class="lable">1</li>
+            <li class="profile"><img src="img/profile.png" alt=""></li> <!-- 시각 장애를 위해서 사용하는 설정은 alt=""에 있는 값으로 나옴 
+                #웹 접근성의 원리-->
+        </ul>
+    </section>
+    
+    <!--이모티콘은 그래픽 폰트로! 벡터로 지원해서 이미지 사이즈 키워도 안 깨짐
+    폰트 리소스 다운할 필요 없음 "Font Aswesome"-->
+    
+    <!-- 두 번째 구역 : 구글 로고 -->
+    <section id="second">
+        <img src="img/google_logo.png" alt="">
+    </section>
+    
+    <!-- 세 번째 구역 : 검색창 -->
+    <section id="third">
+        <input type="text">
+        <ul>
+            <li><i class="fas fa-keyboard"></i></li>
+            <li><i class="fas fa-microphone"></i></li>
+        </ul>
+    </section>
+
+    <!-- 네 번쨰 구역 : 버튼 -->
+    <section id="fourth">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+    </section>
+    
+    <!-- 다섯 번째 구역 : 하단 메뉴-->
+    <section id="fifth">
+        <p>대한민국</p>
+        <ul class = "a">
+            <li>광고</li>
+            <li>비즈니스</li>
+            <li>Google 정보</li>
+        </ul>
+        
+        <ul class = "b">
+            <li>개인정보처리방침</li>
+            <li>약관</li>
+            <li>설정</li>
+        </ul>
+    </section>
+</body>
+</html>

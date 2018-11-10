@@ -1,0 +1,125 @@
+ul {
+    margin : 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none; 
+} /* ul 태그 밑의 li 태그는 리스트 스타일이 없다는 것을 의미*/
+
+/* id 선택자 = 웹 페이지 내에서 유일한 개체일 때 */
+/* class 선택자 = 웹페이지 혹은 전체 사이트에서 유사한 스타일을 사용할 때 */
+#first ul {
+    float:right;
+
+}
+
+#first li {
+    display: inline-block; /* li 태그를 가지고 있는 것은 한 줄에 모두 표시! */
+    padding: 0 5px; /*padding : 상하패딩값 좌우패딩값;*/
+    /*
+    width : 50px;
+    text-align: center;
+    */
+}
+
+#first ul li.lable {
+    width: 10px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: red;
+    color:white;
+    /*border-radius는 둥근 모서리! 얼마나 깎을 것인지 값 입력*/
+
+}
+
+/* first라는 이름의 아이디의 자식 요소 중 ul의 자식 요소인 li 중에서 profile이라는 이름의 요소만!*/
+#first ul li.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px
+}
+#second {
+    padding-top: 150px;
+    text-align: center;
+}
+
+#third {
+    text-align: center;
+    position: relative; /* 상대좌표*/
+    width:500px;
+    margin: 0 auto;
+}
+
+#third input {
+    width: 500px;
+    height:30px;
+    margin-top: 30px;
+    border:1px #cccccc solid; /* border: 굵기, 색상, 선 모양 입력!*/
+    border-bottom: #aaaaaa solid 1px;
+    box-shadow: 0px 2px #eeeeee /*box-shadow : 가로 세로(이동할 값!) 색*/
+
+}
+
+#third ul {
+    position: absolute;
+    top:35px;
+    right: 10px;
+}
+
+#third ul li {
+    display: inline;
+    color: darkgray;
+    padding: 0 5px;
+}
+
+#fourth {
+    text-align: center;
+    padding-top: 20px;
+}
+#fourth button{
+    border:0;
+    border-radius: 3px;
+    background: #eeeeee;
+    color:#555;
+    font-weight: bold;
+    height: 30px;
+
+}
+
+#fifth{
+    position : fixed;
+    left: 0;
+    bottom : 0; 
+    background-color: #eeeeee;
+    width : 100%;
+    border-top: 1px solid #eedddd;
+}
+#fifth p{
+    height: 25px;
+    line-height: 10px;
+    border-bottom: 1px solid #eedddd;
+    font-size: 15px;
+    padding-left: 40px;
+    color:#777777;
+}
+#fifth .a{
+    line-height: 5px;
+    font-size: 14px;
+    padding-left : 20px;
+    float: left;
+}
+#fifth .b{ 
+    font-size: 14px;
+    float: right;
+}
+#fifth .a li{
+    display: inline-block;
+    padding: 5px 20px;
+    color: #777777;
+}
+#fifth .b li{
+    display: inline-block;
+    padding: 5px 20px;
+    color: #777777;
+}
